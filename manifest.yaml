@@ -1,0 +1,33 @@
+version: 0.0.1
+type: plugin
+author: stvlynn
+name: agentapi
+label:
+  en_US: AgentAPI
+  ja_JP: AgentAPI
+  zh_Hans: AgentAPI
+  pt_BR: AgentAPI
+description:
+  en_US: Control coding agents like Claude Code, Goose, Aider, and Codex with an HTTP API. This plugin allows Dify to interact with a running AgentAPI server.
+  ja_JP: Claude Code、Goose、Aider、CodexなどのコーディングエージェントをHTTP APIで制御します。このプラグインを使用すると、Difyは実行中のAgentAPIサーバーと対話できます。
+  zh_Hans: 通过 HTTP API 控制 Claude Code、Goose、Aider 和 Codex 等编码代理。该插件允许 Dify 与正在运行的 AgentAPI 服务器进行交互。
+  pt_BR: Controle agentes de codificação como Claude Code, Goose, Aider e Codex com uma API HTTP. Este plugin permite que o Dify interaja com um servidor AgentAPI em execução.
+icon: icon.png
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/agentapi.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-07-12T13:23:24.405414+08:00
+privacy: PRIVACY.md
+verified: false
